@@ -15,6 +15,7 @@ namespace WebForms
             if (!this.IsClientConnected())
             {
                 Response.End();
+                return;
             }
 
             TotalEfectiveRequest += 1;
