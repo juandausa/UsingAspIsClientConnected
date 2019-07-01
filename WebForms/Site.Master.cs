@@ -9,7 +9,7 @@ namespace WebForms
     {
         static int TotalRequest { get; set; }
         static int TotalEfectiveRequest { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
+        protected override void OnInit(EventArgs e)
         {
             TotalRequest += 1;
             if (!this.IsClientConnected())
